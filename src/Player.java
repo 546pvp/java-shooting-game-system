@@ -12,7 +12,9 @@ public class Player {
         return username;
     }
 
-
+    public void sendMessage(String message){
+        System.out.println("[CHAT]("+username+"): "+message);
+    }
 
     public void takeDamage(int damage){
         if(health - damage <= 0){
